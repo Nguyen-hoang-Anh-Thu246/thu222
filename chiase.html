@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 5 Website Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  </style>
+</head>
+<body>
+
+ <div class="position-relative text-center text-white">
+    <img src="đi chơi 1.jpg" class="img-fluid rounded w-100" alt="Ảnh của tôi" style="height: 600px; object-fit: cover; filter: brightness(50%);">
+    <div class="position-absolute top-50 start-50 translate-middle">
+        
+    </div>
+</div>
+  <h1>TRAVEL AND CHILL</h1>
+  <p>Bên cạnh việc học tập, mình cũng dành thời gian cho những chuyến đi, những buổi gặp gỡ bạn bè để thư giãn và cân bằng cuộc sống. Những trải nghiệm đó giúp mình nạp lại năng lượng, giữ tinh thần tích cực và có thêm động lực để tiếp tục cố gắng trên con đường đã chọn.</p> 
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Trang chủ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about-me">Travel</a>
+      </li>
+      <li class="nav-item">
+    <a class="nav-link" href="#Journey">Every life</a> </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Final Thoughts</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2 id="about-me">About My Lifestyle</h2>
+
+      <img src="xem phim.jpg" class="img-fluid rounded" alt="Ảnh của tôi" style="height:200px; width:100%; object-fit:cover;">
+      <p id="introduction">Mình khá thích những buổi đi xem phim, vì đó là khoảng thời gian giúp mình thư giãn sau những giờ học. Mỗi bộ phim mang đến một câu chuyện và cảm xúc khác nhau, giúp mình có thêm góc nhìn mới về cuộc sống. Với mình, xem phim không chỉ là giải trí mà còn là cách để nạp lại năng lượng và tận hưởng những khoảnh khắc nhẹ nhàng.</p>
+     
+  <button onclick="changeIntro()" class="btn btn-primary">xem tóm tắt</button>
+  <button onclick="quaylai()" class="btn btn-primary">Hiện đầy đủ</button>
+      <h3 class="mt-4">Some Links</h3>
+      <p>Góc nhỏ của tôi</p>
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Trở về trang chủ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="trainghiem.html">trãi nghiệm</a>
+        </li>
+        
+        
+      </ul>
+      <hr class="d-sm-none">
+    </div>
+    <div class="col-sm-8">
+      <h2 id="Journey">THƯ GIÃN TẠI QUÁN CÀ PHÊ CÙNG BẠN BÈ</h2>
+      <h5>Những buổi gặp gỡ, thư giãn sau giờ học</h5>
+      <img src="cà phê 1.jpg" class="img-fluid rounded" alt="Ảnh của tôi" style="height:200px; width:100%; object-fit:cover;">
+      <p>Đây là khoảng thời gian mình cùng bạn bè gặp gỡ, trò chuyện và thư giãn sau những giờ học tập. Không gian quán cà phê mang lại cảm giác thoải mái, giúp mình tạm gác lại áp lực và tận hưởng những phút giây nhẹ nhàng.</p>
+      <p>Những buổi cà phê không chỉ giúp mình cân bằng cuộc sống mà còn là dịp để chia sẻ, kết nối và lưu lại những kỷ niệm đáng nhớ trong quãng thời gian sinh viên.</p>
+
+      <h2 class="mt-5">DU LỊCH CÙNG GIA ĐÌNH</h2>
+      <h5>Những chuyến đi ý nghĩa bên người thân</h5>
+      <img src="du lịch.jpg" class="img-fluid rounded" alt="Ảnh của tôi" style="height:400px; width:100%; object-fit:cover;">
+      <p>Đây là những chuyến đi mà mình có cơ hội được đồng hành cùng gia đình, tận hưởng khoảng thời gian bên nhau sau những ngày học tập bận rộn. Mỗi hành trình không chỉ là dịp để nghỉ ngơi mà còn giúp mình khám phá thêm nhiều nơi mới.</p>
+      <p>Những chuyến du lịch cùng gia đình mang lại cho mình cảm giác ấm áp và gắn kết, đồng thời tạo nên nhiều kỷ niệm đáng nhớ, giúp mình có thêm động lực và tinh thần tích cực trong cuộc sống.</p>
+    </div>
+  </div>
+</div>
+
+<div id="contact" class="mt-5 p-4 bg-dark text-white">
+  <h4 class="fw-bold">Final Thoughts</h4>
+  <p class="mb-1">Website này là nơi mình giới thiệu về bản thân, hành trình học tập và những trải nghiệm trong cuộc sống sinh viên tại Đại học Trà Vinh. Từ những bước chân đầu tiên trên giảng đường, các hoạt động tại trường, đến những khoảng thời gian thư giãn như xem phim, đi cà phê hay du lịch cùng gia đình và bạn bè, tất cả đều góp phần tạo nên những kỷ niệm đáng nhớ và giúp mình trưởng thành hơn mỗi ngày.</p>
+  <p class="mb-0">Mình tin rằng mỗi trải nghiệm, dù nhỏ, đều mang lại giá trị riêng và là nền tảng cho sự phát triển trong tương lai. Thông qua website này, mình hy vọng có thể chia sẻ một phần hành trình của mình và kết nối với mọi người trên con đường khám phá và hoàn thiện bản thân.</p>
+</div>
+<script>
+function changeIntro() {
+  // dùng getElementByid cho đoạn giới thiệu 
+  const mieuTa = document.getElementById("introduction");
+  // sử dụng innner HTML thay đổi nội dung bên trong
+  mieuTa.innerHTML="<b>Tóm tắt:</b>Mình thích đi xem phim để thư giãn sau giờ học, tìm kiếm góc nhìn mới về cuộc sống và nạp lại năng lượng cho bản thân";}</script>
+  <!-- hiện lại đoạn văn đầy đủ -->
+   <script> function quaylai() {
+    const mieuTa = document.getElementById("introduction");
+    mieuTa.innerHTML="Mình khá thích những buổi đi xem phim, vì đó là khoảng thời gian giúp mình thư giãn sau những giờ học. Mỗi bộ phim mang đến một câu chuyện và cảm xúc khác nhau, giúp mình có thêm góc nhìn mới về cuộc sống. Với mình, xem phim không chỉ là giải trí mà còn là cách để nạp lại năng lượng và tận hưởng những khoảnh khắc nhẹ nhàng.";}
+    </script> 
+</body>
+</html>

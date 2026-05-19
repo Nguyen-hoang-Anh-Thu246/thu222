@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Thông tin đăng kí</title>
+    </head>
+    
+    <body bgcolor="#f4f4f4">
+        <form name="dangky" action="" method="post">
+            
+            <table width="600" border="0" align="center"  cellpadding="8" cellspacing="0" bgcolor="#ffffff">
+              <tbody>
+                 <tr bgcolor="#709a52">
+                    <td colspan="2" align="center">
+                        <font color="darkgreen" size="4" face="Arial">
+                            <b>Thông tin đăng kí</b>
+                        </font>
+                    </td>
+                </tr>
+                <td width="30%">
+                    <font face="Arial" size="3">Họ tên:</font>
+                </td>
+                <td><input type="text" name="txtHTen" size="10"></td>
+            </tr>
+            <tr>
+                <td Width="30%">
+                    <font face="Arial" size="3">Ngày sinh:</font>
+                </td>
+                <td><input type="date" name="txtNSinh" size="30"></td>
+            </tr>
+            <tr>
+                <td Width="30%">
+                    <font face="Arial" size="3">Giới tính</font>
+                </td>
+                <td><input type="radio" name="rdGtinh" value="0" checked="checked">Nam
+                &nbsp; &nbsp;&nbsp;
+                <input type="radio" name="rdGtinh" value="1">Nữ</td>
+            </tr>
+
+            <tr>
+                <td><font face="Arial" size="3">Địa chỉ:</font></td>
+                <td><input type="text" name="txtDiachi" size="30"></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <font face="Arial" size="3">MSSV</font>
+                </td>
+                <td>
+                    <input type="text" name="txtMSSV" size="30">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <font face="Arial" size="3">Lớp</font>
+                </td>
+                <td>
+                    <input type="text" name="txtLop" size="30">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <font face="Arial" size="3">Số điện thoại:</font>
+                </td>
+                <td>
+                    <input type="text" name="txtSDT" size="30">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <font face="Arial" size="3">Email:</font>
+                </td>
+                <td>
+                    <input type="text" name="txtEmail" size="30">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <font face="Arial" size="3">Ảnh đại diện</font>
+                </td>
+                <td>
+                    <input type="file" name="fAnh" size="30">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <font face="Arial" size="3">Sở trường</font>
+                </td>
+                <td>
+                    <input type="checkbox" name="chbxSTruong" value="tkweb">Thiết kế web
+                    <input type="checkbox" name="chbxSTruong" value="tkweb">Lập trình web
+                    <input type="checkbox" name="chbxSTruong" value="tkweb">Thành thạo tiếng Trung
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <font face="Arial" size="3">Mô tả sơ lược</font><br>
+                    <textarea name="tarMota" row="4" cols="55"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center" height="50">
+                    <input type="reset" name="btnHuy" value="Hủy bỏ" style="background-color:forestgreen; color:darkgreen;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="submit" name="btnDangky" value="Đăng ký" style="background-color:forestgreen; color: darkgreen;">
+                </td>
+            </tr>
+              </tbody>
+              
+              <ul>
+                <li class="nav-item">
+          <a class="nav-link active" href="index.html">Trở về trang chủ</a>
+        </li>
+              </ul>
+        
+            </table>
+        </form>
+        
+    </body>
+</html>

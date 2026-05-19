@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 5 Website Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  </style>
+</head>
+<body>
+
+ <div class="position-relative text-center text-white">
+    <img src="ảnh bìa.jpg" class="img-fluid rounded w-100" alt="Ảnh của tôi" style="height: 600px; object-fit: cover; filter: brightness(50%);">
+    <div class="position-absolute top-50 start-50 translate-middle">
+        <h1>HELLO! MÌNH TÊN LÀ NGUYỄN HOÀNG ANH THƯ</h1>
+        <p><h2>WELCOME TO MY WORLD</h2></p>
+    </div>
+</div>
+  <h1>MY STORY</h1>
+  <p id="introduction">Chào mừng bạn đến với một góc nhỏ của mình! Mình là một sinh viên năm nhất của ngành Công nghệ thông tin thuộc trường kĩ thuật và công nghệ tại Đại học Trà Vinh. Website này không chỉ là nơi mình giới thiệu về bản thân mà còn là cuốn nhật kí ghi lại những kỉ niệm cuộc sống của mình. Hãy ghé thăm portfolio của mình để thấy những trãi nghiệm cuộc sống qua lăng kính của một cô nàng luôn lạc quan nhé. Rất mong được kết nối và lan tỏa nguồn năng lượng tích cực cùng tất cả mọi người!</p> 
+  <button onclick="changeIntro()" class="btn btn-primary">xem tóm tắt</button>
+  <button onclick="quaylai()" class="btn btn-primary">Hiện đầy đủ</button>
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Trang chủ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about-me">Giới thiệu</a>
+      </li>
+      <li class="nav-item">
+    <a class="nav-link" href="#Journey">Hành trình</a> </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Liên hệ</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2 id="about-me">About Me</h2>
+
+      <img src="ảnh bìa 2.jpg" class="img-fluid rounded" alt="Ảnh của tôi" style="height:200px; width:100%; object-fit:cover;">
+      <p>Mình thích những điều đơn giản, học hỏi mỗi ngày và làm những gì mình yêu thích</p>
+      <h3 class="mt-4">Some Links</h3>
+      <p>Góc nhỏ của tôi</p>
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="trainghiem.html">Trãi nghiệm</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="chiase.html">Chia sẻ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login1.html">Cổng thông tin đăng nhập</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login2.html">Đăng nhập điểm rèn luyện</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login3.html">Đăng kí thông tin</a>
+        </li>
+      </ul>
+      <hr class="d-sm-none">
+    </div>
+    <div class="col-sm-8">
+      <h2 id="Journey">BƯỚC CHÂN ĐẦU TIÊN TẠI GIẢNG ĐƯỜNG</h2>
+      <h5>Tân sinh viên khóa 2025, Tháng 9/2025</h5>
+      <img src="ảnh 3.jpg" class="img-fluid rounded" alt="Ảnh của tôi" style="height:200px; width:100%; object-fit:cover;">
+      <p>Đây là khoảnh khắc đánh dấu hành trình mới của mình tại ngôi nhà chung TVU.</p>
+      <p>Bức ảnh này ghi lại buổi định hướng đầu tiên, nơi mình bắt đầu nuôi dưỡng ước mơ.</p>
+
+      <h2 class="mt-5">My First Coding Journey</h2>
+      <h5>Learning step by step</h5>
+      <img src="code 1.jpg" class="img-fluid rounded" alt="Ảnh của tôi" style="height:200px; width:100%; object-fit:cover;">
+      <p>Bắt đầu từ những kiến thức cơ bản, mình đang từng bước làm quen với lập trình và cách giải quyết vấn đề bằng code.</p>
+      <p>Dù còn nhiều thử thách, nhưng mỗi lần chạy thành công một chương trình nhỏ đều mang lại cho mình động lực để tiếp tục học hỏi và phát triển.</p>
+    </div>
+  </div>
+</div>
+
+<div id="contact" class="mt-5 p-4 bg-dark text-white">
+  <h4 class="fw-bold">Nguyễn Hoàng Anh Thư</h4>
+  <p class="mb-1">📧 Email: thunguyen@gmail.com</p>
+  <p class="mb-0">📍 Địa chỉ: ĐẠI HỌC TRÀ VINH (TVU)</p>
+</div>
+<script>
+function changeIntro() {
+  // dùng getElementByid cho đoạn giới thiệu 
+  const mieuTa = document.getElementById("introduction");
+  // sử dụng innner HTML thay đổi nội dung bên trong
+  mieuTa.innerHTML="<b>Tóm tắt:</b>Sinh viên năm nhất TVU. Thích sáng tạo và lưu giữ kỉ niệm cuộc sống.";}</script>
+  <!-- hiện lại đoạn văn đầy đủ -->
+   <script> function quaylai() {
+    const mieuTa = document.getElementById("introduction");
+    mieuTa.innerHTML="Chào mừng bạn đến với một góc nhỏ của mình! Mình là một sinh viên năm nhất của ngành Công nghệ thông tin thuộc trường kĩ thuật và công nghệ tại Đại học Trà Vinh. Website này không chỉ là nơi mình giới thiệu về bản thân mà còn là cuốn nhật kí ghi lại những kỉ niệm cuộc sống của mình. Hãy ghé thăm portfolio của mình để thấy những trãi nghiệm cuộc sống qua lăng kính của một cô nàng luôn lạc quan nhé. Rất mong được kết nối và lan tỏa nguồn năng lượng tích cực cùng tất cả mọi người!";}
+    </script> 
+</body>
+</html>
