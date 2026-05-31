@@ -2,11 +2,27 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <title>TGDD Tiền Sử - Sát Khung Không Khoảng Trắng</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <style>
+        /* CSS bổ trợ để đảm bảo ảnh trong slide co giãn đẹp và không làm hỏng cấu trúc bảng */
+        .carousel-inner img {
+            width: 100%;
+            margin: auto;
+            min-height: 200px;
+        }
+        @media (max-width: 600px) {
+            .carousel-caption {
+                display: none; 
+            }
+        }
+        .item active:img{
+            width: 15%;
+        }
+    </style>
+    <title>THẾ GIỚI DI ĐỘNG</title>
 </head>
 <body bgcolor="#f3f3f3" marginwidth="0" marginheight="0">
 
@@ -18,7 +34,7 @@
         </tr>
     </table>
 
-   <table width="100%" bgcolor="#ffd400" cellpadding="20" cellspacing="0">
+   <table width="100%" style="background-color:gold;" cellpadding="20" cellspacing="0">
         <tr valign="middle">
             <td align="center" width="20%">
                 <h1 style="margin: 0;"><b>thegioididong</b></h1>
@@ -88,25 +104,25 @@
     </table>
 
     <br>
+    
     <table width="75%" align="center" cellpadding="0" cellspacing="0" border="0">
+        
         <tr>
             <td align="center">
                 <img src="quangcao2.png" alt="Banner Top" width="100%" style="border-radius: 8px;">
             </td>
         </tr>
         
-        <tr>
-            <td align="left" style="font-family: Arial, sans-serif; font-size: 26px; color: #111111; padding-top: 25px; padding-bottom: 15px;">
+        <td align="left" style="font-family: Arial, sans-serif; font-size: 26px; color: #111111; padding-top: 25px; padding-bottom: 15px;">
                 <b>Khuyến mãi online</b>
             </td>
-        </tr>
-        
         <tr>
             <td>
-                <table width="100%" bgcolor="#fff7e6" cellpadding="15" cellspacing="0" border="0" style="border-radius: 0 0 12px 12px; font-family: Arial, sans-serif; border: 1px solid #ffe6cc; margin-bottom: 30px;">
+                <table width="100%" style="background-color:antiquewhite;" cellpadding="15" cellspacing="0" border="0" style="border-radius: 12px; font-family: Arial, sans-serif; border: 1px solid #e1e1 e1; margin-bottom: 30px;">
                     
                     <tr>
                         <td colspan="6" style="padding: 0; background-color: #ffffff;">
+                            
                             <table width="100%" bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" style="border-radius: 12px 12px 0 0; border-bottom: 1px solid #f1f1f1; height: 52px;">
                                 <tr valign="middle">
                                     <td style="padding-left: 15px;" width="50%">
@@ -130,13 +146,14 @@
                     </tr>
 
                     <tr height="15"><td colspan="6"></td></tr>
-
+                    <br>
+                    
                     <tr>
                         <td colspan="6" style="padding-bottom: 20px;">
                             <table width="100%" cellpadding="0" cellspacing="0" border="0">
                                 <tr valign="middle">
                                     <td width="35%">
-                                       
+                                        
                                         <span style="background-color: #ff9900; color: white; padding: 5px 10px; font-weight: bold; border-radius: 4px; font-size: 14px;">Chỉ còn: 00 : 00 : 46</span>
                                     </td>
                                     <td align="center">
@@ -246,30 +263,856 @@
 
                     <tr>
                         <td colspan="6" align="center" style="padding-top: 25px;">
-                            <a href="#" style="display: inline-block; background-color: #ffffff; color: #2f80ed; text-decoration: none; padding: 10px 40px; border-radius: 4px; border: 1px solid #2f80ed; font-size: 14px; font-weight: bold;">Xem thêm sản phẩm ❯</a>
+                            <a href="#" style="display: inline-block; background-color: #ffffff; color: #2f80ed; text-decoration: none; padding: 10px 40px; border-radius: 4px; border: 1px solid #2f80ed; font-size: 14px; font-weight: bold;">Xem thêm sản phẩm </a>
                         </td>
                     </tr>
-                    
                 </table>
+                <br>
             </td>
         </tr>
-        
-    </table>
-<div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="https://placehold.it/1200x400?text=IMAGE" alt="Image">
-        <div class="carousel-caption">
-          <h3>Sell $</h3>
-          <p>Money Money.</p>
-        </div>      
-      </div>
+        <tr>
+            
+        </tr>
+        <tr>
+            <td>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" style="border-radius: 8px; overflow: hidden; margin-bottom: 25px;">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
 
-      <div class="item">
-        <img src="https://placehold.it/1200x400?text=Another Image Maybe" alt="Image">
-        <div class="carousel-caption">
-          <h3>More Sell $</h3>
-          <p>Lorem ipsum...</p>
-        </div>      
-      </div>
-</body>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="qcao4.png" alt="Image">
+                                
+                        </div>
+
+                        <div class="item">
+                            <img src="qcao5.png" alt="Image">    
+                        </div>
+
+                         <div class="item">
+                            <img src="qcao6.png" alt="Image">    
+                        </div>
+                    </div>
+
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <tr>
+            <td>
+                <table width="100%" bgcolor="#ffffff" cellpadding="20" cellspacing="0" border="0" style="border-radius: 12px; font-family: Arial, sans-serif; border: 1px solid #e1e1e1; margin-top: 20px; margin-bottom: 30px;">
+    <tr>
+        <td style="padding: 20px 20px 10px 20px;">
+            <font size="4" color="#111111"><b>Mua Online - Hàng chuẩn, giá mê</b></font>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding: 0 20px 20px 20px; position: relative;">
+            
+            <style>
+                /* Ẩn thanh cuộn trên Chrome, Safari và Opera */
+                #onlineSlider::-webkit-scrollbar {
+                    display: none;
+                }
+                /* Ẩn thanh cuộn trên IE, Edge và Firefox */
+                #onlineSlider {
+                    -ms-overflow-style: none;  /* IE và Edge */
+                    scrollbar-width: none;  /* Firefox */
+                }
+            </style>
+
+            <div style="position: relative; width: 100%;">
+                
+                <button onclick="scrollSlider('left')" style="position: absolute; left: -15px; top: 50%; transform: translateY(-50%); width: 40px; height: 40px; border-radius: 50%; background-color: #ffffff; border: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0,0,0,0.1); cursor: pointer; z-index: 10; font-size: 18px; color: #333; display: flex; align-items: center; justify-content: center; outline: none;">
+                    &lt;
+                </button>
+
+                <div id="onlineSlider" style="display: flex; gap: 10px; overflow-x: auto; scroll-behavior: smooth; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; padding-bottom: 5px;">
+                    
+                    <div style="flex: 0 0 auto; width: 12.5%; min-width: 140px; box-sizing: border-box; scroll-snap-align: start;">
+                        <a href="#" style="text-decoration: none;">
+                            <div style="border: 1px solid #f0f0f0; border-radius: 8px; padding: 10px; background-color: #ffffff; text-align: center; height: 100%;">
+                                <img src="muangaykeolo.gif" width="100%" style="border-radius: 6px; margin-bottom: 8px;" alt="Thế giới phụ kiện">
+                                <div style="font-size: 12px; color: #333333; font-weight: bold; line-height: 16px;">Mua Ngay Kẻo Lỡ!</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div style="flex: 0 0 auto; width: 12.5%; min-width: 140px; box-sizing: border-box; scroll-snap-align: start;">
+                        <a href="#" style="text-decoration: none;">
+                            <div style="border: 1px solid #f0f0f0; border-radius: 8px; padding: 10px; background-color: #ffffff; text-align: center; height: 100%;">
+                                <img src="phukiengiam.png" width="100%" style="max-height: 80px; object-fit: contain; margin-bottom: 8px;" alt="tomtoc">
+                                <div style="font-size: 12px; color: #333333; line-height: 16px;">Phụ kiện chuẩn<br>Giảm đến 50++</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div style="flex: 0 0 auto; width: 12.5%; min-width: 140px; box-sizing: border-box; scroll-snap-align: start;">
+                        <a href="#" style="text-decoration: none;">
+                            <div style="border: 1px solid #f0f0f0; border-radius: 8px; padding: 10px; background-color: #ffffff; text-align: center; height: 100%;">
+                                <img src="congnghegiam.png" width="100%" style="max-height: 80px; object-fit: contain; margin-bottom: 8px;" alt="AUKEY">
+                                <div style="font-size: 12px; color: #333333; line-height: 16px;">Chuẩn công nghệ<br>Giảm tới 50%+</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div style="flex: 0 0 auto; width: 12.5%; min-width: 140px; box-sizing: border-box; scroll-snap-align: start;">
+                        <a href="#" style="text-decoration: none;">
+                            <div style="border: 1px solid #f0f0f0; border-radius: 8px; padding: 10px; background-color: #ffffff; text-align: center; height: 100%;">
+                                <img src="batnhac.png" width="100%" style="max-height: 80px; object-fit: contain; margin-bottom: 8px;" alt="earfun">
+                                <div style="font-size: 12px; color: #333333; line-height: 16px;">Bật nhạc cực đã<br>Ưu đãi 40%+</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div style="flex: 0 0 auto; width: 12.5%; min-width: 140px; box-sizing: border-box; scroll-snap-align: start;">
+                        <a href="#" style="text-decoration: none;">
+                            <div style="border: 1px solid #f0f0f0; border-radius: 8px; padding: 10px; background-color: #ffffff; text-align: center; height: 100%;">
+                                <img src="chamlakhac.png" width="100%" style="max-height: 80px; object-fit: contain; margin-bottom: 8px;" alt="DEKEY">
+                                <div style="font-size: 12px; color: #333333; line-height: 16px;">Chạm là khác<br>Khám phá Dekey</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div style="flex: 0 0 auto; width: 12.5%; min-width: 140px; box-sizing: border-box; scroll-snap-align: start;">
+                        <a href="#" style="text-decoration: none;">
+                            <div style="border: 1px solid #f0f0f0; border-radius: 8px; padding: 10px; background-color: #ffffff; text-align: center; height: 100%;">
+                                <img src="dubocongnghe.png" width="100%" style="max-height: 80px; object-fit: contain; margin-bottom: 8px;" alt="Razer">
+                                <div style="font-size: 12px; color: #333333; line-height: 16px;">Đủ Bộ Công Nghệ<br>Hàng Chính Hãng</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div style="flex: 0 0 auto; width: 12.5%; min-width: 140px; box-sizing: border-box; scroll-snap-align: start;">
+                        <a href="#" style="text-decoration: none;">
+                            <div style="border: 1px solid #f0f0f0; border-radius: 8px; padding: 10px; background-color: #ffffff; text-align: center; height: 100%;">
+                                <img src="tramsacmau.png" width="100%" style="max-height: 80px; object-fit: contain; margin-bottom: 8px;" alt="MICROPACK">
+                                <div style="font-size: 12px; color: #333333; line-height: 16px;">Trạm Sắc Màu<br>Bảo Hành 2 Năm</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div style="flex: 0 0 auto; width: 12.5%; min-width: 140px; box-sizing: border-box; scroll-snap-align: start;">
+                        <a href="#" style="text-decoration: none;">
+                            <div style="border: 1px solid #f0f0f0; border-radius: 8px; padding: 10px; background-color: #ffffff; text-align: center; height: 100%;">
+                                <img src="chiengame.png" width="100%" style="max-height: 80px; object-fit: contain; margin-bottom: 8px;" alt="CORSAIR">
+                                <div style="font-size: 12px; color: #333333; line-height: 16px;">Chiến Game Đỉnh<br>Săn Deal Hời</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div style="flex: 0 0 auto; width: 12.5%; min-width: 140px; box-sizing: border-box; scroll-snap-align: start;">
+                        <a href="#" style="text-decoration: none;">
+                            <div style="border: 1px solid #f0f0f0; border-radius: 8px; padding: 10px; background-color: #ffffff; text-align: center; height: 100%;">
+                                <img src="phukienchuangu.png" width="100%" style="max-height: 80px; object-fit: contain; margin-bottom: 8px;" alt="MICROPACK">
+                                <div style="font-size: 12px; color: #333333; line-height: 16px;">Phụ kiện chuẩn gu<br>Mua ngay!</div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <button onclick="scrollSlider('right')" style="position: absolute; right: -15px; top: 50%; transform: translateY(-50%); width: 40px; height: 40px; border-radius: 50%; background-color: #ffffff; border: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0,0,0,0.1); cursor: pointer; z-index: 10; font-size: 18px; color: #333; display: flex; align-items: center; justify-content: center; outline: none;">
+                    &gt;
+                </button>
+
+            </div>
+
+        </td>
+    </tr>
+</table>
+
+<script>
+    function scrollSlider(direction) {
+        var slider = document.getElementById('onlineSlider');
+        // Khoảng cách dịch chuyển mỗi lần bấm nút (tầm 2 ô sản phẩm)
+        var scrollAmount = 300; 
+        
+        if (direction === 'left') {
+            slider.scrollLeft -= scrollAmount;
+        } else {
+            slider.scrollLeft += scrollAmount;
+        }
+    }
+</script>
+<table width="100%" bgcolor="#ffffff" cellpadding="20" cellspacing="0" border="0" style="border-radius: 12px; font-family: Arial, sans-serif; border: 1px solid #e1e1e1; margin-top: 20px; margin-bottom: 30px;">
+    <tr>
+        <td style="padding: 20px 20px 15px 20px;">
+            <font size="5" color="#111111"><b>Gợi ý cho bạn</b></font>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding: 0 20px 20px 20px;">
+            
+            <div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px;">
+                
+                <div style="border: 1px solid #e1e1e1; border-radius: 8px; padding: 12px; position: relative; background: #fff; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <span style="font-size: 11px; color: #555; background: #f1f1f1; padding: 2px 6px; border-radius: 4px;">Trả chậm 0%</span>
+                        <div style="text-align: center; margin: 15px 0;">
+                            <img src="iphone-17-pro-max-cam-thumb-600x600.jpg" style="width: 100%; max-width: 140px; height: auto;" alt="iPhone 17">
+                        </div>
+                        <div style="font-size: 13px; color: #333; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">iPhone 17 256GB</div>
+                        <div style="margin-bottom: 8px;">
+                            <span style="font-size: 11px; color: #666; background: #f1f1f1; padding: 2px 4px; border-radius: 3px; margin-right: 4px;">Super Retina XDR</span>
+                            <span style="font-size: 11px; color: #666; background: #f1f1f1; padding: 2px 4px; border-radius: 3px;">6.3"</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="font-size: 15px; color: #d0021c; font-weight: bold; margin-bottom: 2px;">23.990.000₫</div>
+                        <div style="font-size: 12px; color: #999; text-decoration: line-through; margin-bottom: 8px;">24.990.000₫ <span style="color: #d0021c;">-4%</span></div>
+                        <div style="font-size: 11px; color: #fb6e2e;">★ 4.9 <span style="color: #666; margin-left: 4px;">• Đã bán 34,3k</span></div>
+                    </div>
+                </div>
+
+                <div style="border: 1px solid #e1e1e1; border-radius: 8px; padding: 12px; position: relative; background: #fff; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                       
+                        <div style="text-align: center; margin: 15px 0;">
+                            <img src="samsung-galaxy-a36-5g-purple-thumb-1-600x600.jpg" style="width: 100%; max-width: 140px; height: auto;" alt="iPhone 16 Plus">
+                        </div>
+                        <div style="font-size: 13px; color: #333; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">Samsung Galaxy A36 5G</div>
+                         <div style="font-size: 13px; color: #333; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">8GB/256GB</div>
+                        <div style="margin-bottom: 8px;">
+                            <span style="font-size: 11px; color: #666; background: #f1f1f1; padding: 2px 4px; border-radius: 3px; margin-right: 4px;">Super Retina XDR</span>
+                            <span style="font-size: 11px; color: #666; background: #f1f1f1; padding: 2px 4px; border-radius: 3px;">6.7"</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="font-size: 12px; color:#fb6e2e; font-style: italic; margin-bottom: 2px;">Online giá rẻ quá</div>
+                        <div style="font-size: 15px; color: #d0021c; font-weight: bold; margin-bottom: 2px;">7.090.000₫</div>
+                        <div style="font-size: 12px; color: #999; text-decoration: line-through; margin-bottom: 8px;">9.130.000₫ <span style="color: #d0021c;">-22%</span></div>
+                        <div style="font-size: 11px; color: #fb6e2e;">★ 4.9 <span style="color: #666; margin-left: 4px;">• Đã bán 66,1k</span></div>
+                    </div>
+                </div>
+
+                <div style="border: 1px solid #e1e1e1; border-radius: 8px; padding: 12px; position: relative; background: #fff; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        
+                        <div style="text-align: center; margin: 15px 0;">
+                            <img src="redmi-watch-5-lite-den-tb-600x600.jpg" style="width: 100%; max-width: 140px; height: auto;" alt="xiaomi-watch-5k">
+                        </div>
+                        <div style="font-size: 13px; color: #333; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">Xiaomi Redmi Watch 5</div>
+                        <div style="font-size: 13px; color: #333; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">Lite 48.2mm dây TPU</div>
+                        <div style="margin-bottom: 8px;">
+                            
+                           
+                        </div>
+                    </div>
+                    <div>
+                        
+                        <div style="font-size: 15px; color: #d0021c; font-weight: bold; margin-bottom: 8px;">1.290.000₫</div>
+                        <div style="font-size: 12px; color: #999; text-decoration: line-through; margin-bottom: 8px;">1.370.000₫<span style="color:#d0021c">-5%</span></div>
+                        <div style="font-size: 11px; color:#fb6e2e;">★ 4.9<span style="color:#666; margin-left: 4px;">• Đã bán 20,5k</span></div>
+                        <div style="min-height: 18px;"></div>
+                    </div>
+                </div>
+
+
+                <div style="border: 1px solid #e1e1e1; border-radius: 8px; padding: 12px; position: relative; background: #fff; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <span style="font-size: 11px; color: #555; background: #f1f1f1; padding: 2px 6px; border-radius: 4px;">Trả chậm 0% trả trước 0đ</span>
+                        <div style="text-align: center; margin: 15px 0;">
+                            <img src="macbook-neo-13-inch-a18-pro-8gb-256gb-thumb-600x600.jpg" style="width: 100%; max-width: 140px; height: auto;" alt="iPhone 16">
+                        </div>
+                        <div style="font-size: 13px; color: #333; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">Macbook Neo 13 inch</div>
+                        <div style="font-size: 13px; color: #333; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">A18 Pro 8GB/256GB</div>
+                        <div style="margin-bottom: 8px;">
+                            <span style="font-size: 11px; color: #666; background: #f1f1f1; padding: 2px 4px; border-radius: 3px; margin-right: 4px;">RAM 8 GB</span>
+                            <span style="font-size: 11px; color: #666; background: #f1f1f1; padding: 2px 4px; border-radius: 3px;">SSD 256 GB"</span>
+                        </div>
+                    </div>
+                    <div>
+                       
+                        <div style="font-size: 15px; color: #d0021c; font-weight: bold; margin-bottom: 2px;">15.990.000₫</div>
+                        <div style="font-size: 12px; color: #999; text-decoration: line-through; margin-bottom: 8px;">16.490.000₫</span></div>
+                        <div style="font-size: 13px; color:#333; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">Quà 500.000₫</div>
+                        <div style="font-size: 11px; color: #fb6e2e;">★ 4.9 <span style="color: #666; margin-left: 4px;">• Đã bán 1,5k</span></div>
+                    </div>
+                </div>
+
+                <div style="border: 1px solid #e1e1e1; border-radius: 8px; padding: 12px; position: relative; background: #fff; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        
+                        <div style="text-align: center; margin: 15px 0;">
+                            <img src="xiaomi-redmi-pad-2-gray-thumb-600x600.jpg" style="width: 100%; max-width: 140px; height: auto;" alt="iPhone 17e">
+                        </div>
+                        <div style="font-size: 13px; color: #333; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">Xiaomi Redmi Pad 2 WIFI</div>
+                        <div style="font-size: 13px; color:#333; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">4GB/128GB</div>
+                        <div style="margin-bottom: 8px;">
+                            <span style="font-size: 11px; color: #666; background: #f1f1f1; padding: 2px 4px; border-radius: 3px; margin-right: 4px;">IPS RCD</span>
+                            <span style="font-size: 11px; color: #666; background: #f1f1f1; padding: 2px 4px; border-radius: 3px;">11"</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="font-size: 12px; color:#fb6e2e; font-style: italic; margin-bottom: 2px;">Online giá rẻ quá</div>
+                        <div style="font-size: 15px; color: #d0021c; font-weight: bold; margin-bottom: 2px;">4.890.000₫</div>
+                        <div style="font-size: 12px; color: #999; text-decoration: line-through; margin-bottom: 8px;">6.190.000₫ <span style="color: #d0021c;">-21%</span></div>
+                        <div style="font-size: 11px; color: #fb6e2e;">★ 4.9 <span style="color: #666; margin-left: 4px;">• Đã bán 9,1k</span></div>
+                    </div>
+                </div>
+
+                <div style="border: 1px solid #e1e1e1; border-radius: 8px; padding: 12px; position: relative; background: #fff; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="display: flex; gap: 4px; font-size: 10px; margin-bottom: 4px;">
+                           <span style="font-size: 11px; color: #555; background: #f1f1f1; padding: 2px 6px; border-radius: 4px;">Trả chậm 0% trả trước 0đ</span>
+                        </div>
+                        <div style="text-align: center; margin: 15px 0;">
+                            <img src="ipad-11-wifi-yellow-thumb-600x600 (1).jpg" style="width: 100%; max-width: 140px; height: auto;" alt="Ipad">
+                        </div>
+                        <div style="font-size: 13px; color: #333; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">IPad A16 WIFI 128GB</div>
+                        <div style="margin-bottom: 8px;">
+                            <span style="font-size: 11px; color: #666; background: #f1f1f1; padding: 2px 4px; border-radius: 3px; margin-right: 4px;">Retina IPS RCD</span>
+                            <span style="font-size: 11px; color: #666; background: #f1f1f1; padding: 2px 4px; border-radius: 3px;">11"</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="font-size: 15px; color: #d0021c; font-weight: bold; margin-bottom: 2px;">9.290.000₫</div>
+                        <div style="font-size: 12px; color: #999; text-decoration: line-through; margin-bottom: 4px;">9.790.000₫ <span style="color: #d0021c;">-5%</span></div>
+                        <div style="font-size: 13px; color:#333; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">Quà 400.000₫</div>
+                        <div style="font-size: 11px; color: #fb6e2e;">★ 4.9 <span style="color: #666; margin-left: 4px;">• Đã bán 43k</span></div>
+                    </div>
+                </div>
+
+                <div style="border: 1px solid #e1e1e1; border-radius: 8px; padding: 12px; position: relative; background: #fff; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="display: flex; gap: 4px; font-size: 10px; margin-bottom: 4px;">
+                           <span style="font-size: 11px; color:#555; background: #f1f1f1;padding: 2px 6px; border-radius: 4px;">Trả chậm 0%</span>
+                        </div>
+                        <div style="text-align: center; margin: 15px 0;">
+                            <img src="iphone-17-pro-max-cam-thumb-600x600.jpg" style="width: 100%; max-width: 140px; height: auto;" alt="ip17">
+                        </div>
+                        <div style="font-size: 13px; color: #333; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">iPhone 17 Pro Max</div>
+                        <div style="font-size: 13px; color:#333; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">256GB</div>
+                        <div style="margin-bottom: 8px;">
+                            <span style="font-size: 11px; color: #666; background: #f1f1f1; padding: 2px 4px; border-radius: 3px; margin-right: 4px;">Super Retina XDR</span>
+                            <span style="font-size: 11px; color: #666; background: #f1f1f1; padding: 2px 4px; border-radius: 3px;">6,9"</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="font-size: 15px; color: #d0021c; font-weight: bold; margin-bottom: 2px;">36.990.000₫</div>
+                        <div style="font-size: 12px; color: #999; text-decoration: line-through; margin-bottom: 4px;">37.990.000₫ <span style="color: #d0021c;">-2%</span></div>
+                    
+                        <div style="font-size: 11px; color: #fb6e2e;">★ 4.9 <span style="color: #666; margin-left: 4px;">• Đã bán 243,4K</span></div>
+                    </div>
+                </div>
+
+                <div style="border: 1px solid #e1e1e1; border-radius: 8px; padding: 12px; position: relative; background: #fff; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <span style="font-size: 11px; color:#d0021c; background: #f1f1f1; padding: 2px 6px; border-radius: 4px;">Mẫu mới</span>
+                        <div style="text-align: center; margin: 15px 0;">
+                            <img src="xiaomi-redmi-watch-6-thumb-2-639122662985495541-600x600.jpg" style="width: 100%; max-width: 140px; height: auto;" alt="watch6">
+                        </div>
+                        <div style="font-size: 13px; color: #333; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">Xiaomi Redmi Watch 6</div>
+                        
+                    </div>
+                    <div>
+                       
+                        <div style="font-size: 15px; color: #d0021c; font-weight: bold; margin-bottom: 2px;">2.690.000₫</div>
+                        <div style="font-size: 12px; color: #999; text-decoration: line-through; margin-bottom: 8px;">3.190.000₫ <span style="color: #d0021c;">-15%</span></div>
+                        <div style="font-size: 11px; color: #fb6e2e;">★ 5 <span style="color: #666; margin-left: 4px;">• Đã bán 3,2k</span></div>
+                    </div>
+                </div>
+                <div style="border: 1px solid #e1e1e1; border-radius: 8px; padding: 12px; position: relative; background: #fff; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <span style="font-size: 11px; color: #555; background: #f1f1f1; padding: 2px 6px; border-radius: 4px;">Trả chậm 0% trả trước 0đ</span>
+                        <div style="text-align: center; margin: 15px 0;">
+                            <img src="acer-aspire-lite-15-al15-41p-r3ql-r7-nxj54sv001-thumb-638828183898800384-600x600.jpg" style="width: 100%; max-width: 140px; height: auto;" alt="acer">
+                        </div>
+                        <div style="font-size: 13px; color: #333; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">Acer Aspire Lite 15  AL15</div>
+                        <div style="font-size: 13px; color: #333; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">41P R3QL R7 5700U...</div>
+                        <div style="margin-bottom: 8px;">
+                            <span style="font-size: 11px; color: #666; background: #f1f1f1; padding: 2px 4px; border-radius: 3px; margin-right: 4px;">RAM 8 GB</span>
+                            <span style="font-size: 11px; color: #666; background: #f1f1f1; padding: 2px 4px; border-radius: 3px;">SSD 512 GB</span>
+                        </div>
+                    </div>
+                    <div>
+                       
+                        <div style="font-size: 15px; color: #d0021c; font-weight: bold; margin-bottom: 2px;">13.990.000₫</div>
+                        <div style="font-size: 12px; color: #999; text-decoration: line-through; margin-bottom: 8px;">14.990.000₫ <span style="color: #d0021c;">-6%</span></div>
+                        <div style="font-size: 11px; color: #fb6e2e;">★ 5 <span style="color: #666; margin-left: 4px;">• Đã bán 3,2k</span></div>
+                    </div>
+                </div>
+
+                <div style="border: 1px solid #e1e1e1; border-radius: 8px; padding: 12px; position: relative; background: #fff; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <span style="font-size: 11px; color: #555; background: #f1f1f1; padding: 2px 6px; border-radius: 4px;">Trả chậm 0% trả trước 0đ</span>
+                        <div style="text-align: center; margin: 15px 0;">
+                            <img src="apple-watch-se-3-gps-vien-nhom-day-the-thao-trang-tb-600x600.jpg" style="width: 100%; max-width: 140px; height: auto;" alt="APPLE WATCH">
+                        </div>
+                        <div style="font-size: 13px; color: #333; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">Apple Watch SE 3 GPS</div>
+                        <div style="font-size: 13px; color: #333; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">40mm viền nhôm dây t...</div>
+                       
+                    </div>
+                    <div>
+                        
+                        <div style="font-size: 15px; color: #d0021c; font-weight: bold; margin-bottom: 2px;">6.290.000₫</div>
+                        <div style="font-size: 12px; color: #999; text-decoration: line-through; margin-bottom: 8px;">6.990.000₫ <span style="color: #d0021c;">-10%</span></div>
+                        <div style="font-size: 11px; color: #fb6e2e;">★ 4.9 <span style="color: #666; margin-left: 4px;">• Đã bán 7,3k</span></div>
+                    </div>
+                </div>
+
+                <div style="border: 1px solid #e1e1e1; border-radius: 8px; padding: 12px; position: relative; background: #fff; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <span style="font-size: 11px; color: #555; background: #f1f1f1; padding: 2px 6px; border-radius: 4px;">Trả chậm 0% trả trước 0đ</span>
+                        <div style="text-align: center; margin: 15px 0;">
+                            <img src="hp-245-g10-r5-b8pf9at-638828180409840419-600x600.jpg" style="width: 100%; max-width: 140px; height: auto;" alt="HP-245">
+                        </div>
+                        <div style="font-size: 13px; color: #333; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">HP 245 G10 R15 7530U</div>
+                        <div style="font-size: 13px; color:#333; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">(B8PF9AT)</div>
+                        <div style="margin-bottom: 8px;">
+                            <span style="font-size: 11px; color: #666; background: #f1f1f1; padding: 2px 4px; border-radius: 3px; margin-right: 4px;">RAM 8 GB</span>
+                            <span style="font-size: 11px; color: #666; background: #f1f1f1; padding: 2px 4px; border-radius: 3px;">SSD 512 GB</span>
+                        </div>
+                    </div>
+                    <div>
+                        
+                        <div style="font-size: 15px; color: #d0021c; font-weight: bold; margin-bottom: 2px;">15.790.000₫</div>
+                        <div style="font-size: 12px; color: #999; text-decoration: line-through; margin-bottom: 8px;">16.890.000₫ <span style="color: #d0021c;">-6%</span></div>
+                        <div style="font-size: 12px; color: #333; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">Quà 100.000₫</div>
+                        <div style="font-size: 11px; color: #fb6e2e;">★ 4.9 <span style="color: #666; margin-left: 4px;">• Đã bán 5,5k</span></div>
+                    </div>
+                </div>
+                <div style="border: 1px solid #e1e1e1; border-radius: 8px; padding: 12px; position: relative; background: #fff; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <span style="font-size: 11px; color: #555; background: #f1f1f1; padding: 2px 6px; border-radius: 4px;">Trả chậm 0% trả trước 0đ</span>
+                        <div style="text-align: center; margin: 15px 0;">
+                            <img src="ipad-11-wifi-yellow-thumb-600x600 (1).jpg" style="width: 100%; max-width: 140px; height: auto;" alt="Ipad">
+                        </div>
+                        <div style="font-size: 13px; color: #333; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">iPad A16 WIFI 128GB</div>
+                        <div style="margin-bottom: 8px;">
+                            <span style="font-size: 11px; color: #666; background: #f1f1f1; padding: 2px 4px; border-radius: 3px; margin-right: 4px;">Retina IPS LCD</span>
+                            <span style="font-size: 11px; color: #666; background: #f1f1f1; padding: 2px 4px; border-radius: 3px;">11"</span>
+                        </div>
+                    </div>
+                    <div>
+                        
+                        <div style="font-size: 15px; color: #d0021c; font-weight: bold; margin-bottom: 2px;">9.290.000₫</div>
+                        <div style="font-size: 12px; color: #999; text-decoration: line-through; margin-bottom: 8px;">9.790.000₫ <span style="color: #d0021c;">-5%</span></div>
+                        <div style="font-size: 13px; color: #333; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">Quà 400.000₫ </div>
+                        <div style="font-size: 11px; color: #fb6e2e;">★ 4.9 <span style="color: #666; margin-left: 4px;">• Đã bán 134,8k</span></div>
+                    </div>
+                </div>
+                </div>
+
+            <div style="text-align: center; margin-top: 20px;">
+                <button style="background: #fff; border: 1px solid #e1e1e1; padding: 10px 30px; border-radius: 8px; color: #2f80ed; font-size: 14px; cursor: pointer; font-weight: bold; outline: none;">
+                    Xem thêm 12 sản phẩm <span style="font-size: 10px; margin-left: 4px;">▼</span>
+                </button>
+            </div>
+           <table width="100%" bgcolor="#ffffff" cellpadding="20" cellspacing="0" border="0" style="border-radius: 12px; font-family: Arial, sans-serif; border: 1px solid #e1e1e1; margin-top: 20px; margin-bottom: 30px;">
+        <tr>
+            <td style="padding: 20px 20px 15px 20px;">
+                <font size="5" color="#111111"><b>Đại Tiệc Smartphone Giá Rẻ</b></font>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding: 0 20px 20px 20px; position: relative;">
+                
+                <style>
+                    /* Ẩn thanh cuộn trên Chrome, Safari và Opera */
+                    #smartphoneSlider::-webkit-scrollbar {
+                        display: none;
+                    }
+                    /* Ẩn thanh cuộn trên IE, Edge và Firefox */
+                    #smartphoneSlider {
+                        -ms-overflow-style: none;  /* IE và Edge */
+                        scrollbar-width: none;  /* Firefox */
+                    }
+                </style>
+
+                <div style="display: flex; gap: 12px; align-items: stretch; position: relative;">
+                    
+                    <div style="flex: 0 0 auto; width: 24.5%; min-width: 250px; border-radius: 8px; overflow: hidden;">
+                        <a href="#">
+                            <img src="android-gia-re.png" style="width: 100%; height: 100%; object-fit: cover; display: block;" alt="Đại tiệc Android giá rẻ">
+                        </a>
+                    </div>
+
+                    <div style="flex: 1; position: relative; overflow: hidden;">
+                        
+                        <button onclick="scrollPhoneSlider('left')" style="position: absolute; left: 5px; top: 50%; transform: translateY(-50%); width: 40px; height: 40px; border-radius: 50%; background-color: #ffffff; border: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0,0,0,0.1); cursor: pointer; z-index: 10; font-size: 18px; color: #333; display: flex; align-items: center; justify-content: center; outline: none;">
+                            &lt;
+                        </button>
+
+                        <div id="smartphoneSlider" style="display: flex; gap: 12px; overflow-x: auto; scroll-behavior: smooth; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; padding-bottom: 5px;">
+                            
+                            <div style="flex: 0 0 auto; width: 31%; min-width: 190px; border: 1px solid #e1e1e1; border-radius: 8px; padding: 12px; background: #fff; display: flex; flex-direction: column; justify-content: space-between; scroll-snap-align: start; box-sizing: border-box;">
+                                <div>
+                                    <span style="font-size: 11px; color: #555; background: #f1f1f1; padding: 2px 6px; border-radius: 4px;">Trả chậm 0% trả trước 0đ</span>
+                                    <div style="text-align: center; margin: 15px 0;">
+                                        <img src="samsung-galaxy-a07-violet-thumb-600x600.jpg" style="width: 100%; max-width: 130px; height: auto;" alt="Samsung Galaxy A07">
+                                    </div>
+                                    <div style="font-size: 13px; color: #333; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">Samsung Galaxy A07</div>
+                                    <div style="font-size: 13px; color: #333; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">4GB/64GB</div>
+                                    <div style="margin-bottom: 8px;">
+                                        <span style="font-size: 11px; color: #666; background: #f1f1f1; padding: 2px 4px; border-radius: 3px; margin-right: 4px;">HD+</span>
+                                        <span style="font-size: 11px; color: #666; background: #f1f1f1; padding: 2px 4px; border-radius: 3px;">6.7"</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div style="font-size: 15px; color: #d0021c; font-weight: bold; margin-bottom: 2px;">2.790.000₫</div>
+                                    <div style="font-size: 12px; color: #999; text-decoration: line-through; margin-bottom: 8px;">3.290.000₫ <span style="color: #d0021c;">-15%</span></div>
+                                    <div style="font-size: 11px; color: #fb6e2e;">★ 4.9 <span style="color: #666; margin-left: 4px;">• Đã bán 67,5k</span></div>
+                                </div>
+                            </div>
+
+                            <div style="flex: 0 0 auto; width: 31%; min-width: 190px; border: 1px solid #e1e1e1; border-radius: 8px; padding: 12px; background: #fff; display: flex; flex-direction: column; justify-content: space-between; scroll-snap-align: start; box-sizing: border-box;">
+                                <div>
+                                    <span style="font-size: 11px; color: #555; background: #f1f1f1; padding: 2px 6px; border-radius: 4px;">Trả chậm 0% trả trước 0đ</span>
+                                    <div style="text-align: center; margin: 15px 0;">
+                                        <img src="oppo-a6x-4gb-64gb-tim-titan-thumb-1-600x600.jpg" style="width: 100%; max-width: 130px; height: auto;" alt="OPPO A6x">
+                                    </div>
+                                    <div style="font-size: 13px; color: #333; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">OPPO A6x 4GB/64GB</div>
+                                    <div style="margin-bottom: 8px;">
+                                        <span style="font-size: 11px; color: #666; background: #f1f1f1; padding: 2px 4px; border-radius: 3px; margin-right: 4px;">HD+</span>
+                                        <span style="font-size: 11px; color: #666; background: #f1f1f1; padding: 2px 4px; border-radius: 3px;">6.75"</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div style="font-size: 15px; color: #d0021c; font-weight: bold; margin-bottom: 2px;">4.390.000₫</div>
+                                    <div style="font-size: 12px; color: #999; margin-bottom: 4px; height: 16px;">4.490.000₫</div>
+                                    <div style="font-size: 11px; color: #333; background: #fff; font-weight: bold; line-height: 18px; min-height: 36px;">Quà 50.000₫</div>
+                                    <div style="font-size: 11px; color: #fb6e2e;">★ 4.9 <span style="color: #666; margin-left: 4px;">• Đã bán 20,7k</span></div>
+                                </div>
+                            </div>
+
+                            <div style="flex: 0 0 auto; width: 31%; min-width: 190px; border: 1px solid #e1e1e1; border-radius: 8px; padding: 12px; background: #fff; display: flex; flex-direction: column; justify-content: space-between; scroll-snap-align: start; box-sizing: border-box;">
+                                <div>
+                                    <span style="font-size: 11px; color: #555; background: #f1f1f1; padding: 2px 6px; border-radius: 4px;">Trả chậm 0% trả trước 0đ</span>
+                                    <div style="text-align: center; margin: 15px 0;">
+                                        <img src="asus-vivobook-s14-s3407va-core-5-210h-ly146w-thumb-638965583427975379-600x600.jpg" style="width: 100%; max-width: 130px; height: auto;" alt="Asus Vivobook S14">
+                                    </div>
+                                    <div style="font-size: 13px; color: #333; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">Asus Vivobook S14 </div>
+                                    <div style="font-size: 13px; color: #333; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">S3407VA Core 5210H...</div>
+                                    <div style="margin-bottom: 8px;">
+                                        <span style="font-size: 11px; color: #666; background: #f1f1f1; padding: 2px 4px; border-radius: 3px; margin-right: 4px;">RAM 16 GB</span>
+                                        <span style="font-size: 11px; color: #666; background: #f1f1f1; padding: 2px 4px; border-radius: 3px;">SSD 512 GB</span>
+                                    </div>
+                                        </div>
+                                <div>
+                                    <div style="font-size: 12px; color:#fb6e2e; font-style: italic; margin-bottom: 2px;">Online giá rẻ quá</div>
+                                    <div style="font-size: 15px; color: #d0021c; font-weight: bold; margin-bottom: 2px;">19.890.000₫</div>
+                                    <div style="font-size: 12px; color: #999; text-decoration: line-through; margin-bottom: 4px;">22.990.000₫ <span style="color: #d0021c;">-13%</span></div>
+                                    <div style="font-size: 11px; color: #333; background-color: #fff; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">Quà 100.000₫</div>
+                                    <div style="font-size: 11px; color: #fb6e2e;">★ 5 <span style="color: #666; margin-left: 4px;">• Đã bán 853</span></div>
+                                </div>
+                            </div>
+
+                            <div style="flex: 0 0 auto; width: 31%; min-width: 190px; border: 1px solid #e1e1e1; border-radius: 8px; padding: 12px; background: #fff; display: flex; flex-direction: column; justify-content: space-between; scroll-snap-align: start; box-sizing: border-box;">
+                                <div>
+                                    <div style="margin-bottom: 4px;"><span style="font-size: 10px; color:#d0021c; background: #555 padding: 2px 4px; border-radius: 3px; font-weight: bold;">Mẫu mới</span></div>
+                                    <div style="text-align: center; margin: 15px 0;">
+                                        <img src="xiaomi-poco-c71-4gb-64gb-vang-thumb-600x600.jpg" style="width: 100%; max-width: 130px; height: auto;" alt="Xiaomi Poco C71">
+                                    </div>
+                                    <div style="font-size: 13px; color: #333; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">Xiaomi Poco C71 </div>
+                                    <div style="font-size: 13px; color:#333; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">4GB/64GB</div>
+                                    <div style="margin-bottom: 8px;">
+                                        <span style="font-size: 11px; color: #666; background: #f1f1f1; padding: 2px 4px; border-radius: 3px; margin-right: 4px;">HD+</span>
+                                        <span style="font-size: 11px; color: #666; background: #f1f1f1; padding: 2px 4px; border-radius: 3px;">6.88"</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div style="font-size: 15px; color: #d0021c; font-weight: bold; margin-bottom: 2px;">3.490.000₫</div>
+                                    <div style="font-size: 12px; color: #999; text-decoration: line-through; margin-bottom: 8px;">3.990.000₫ <span style="color: #d0021c;">-12%</span></div>
+                                    <div style="font-size: 11px; color: #fb6e2e;">★ 5 <span style="color: #666; margin-left: 4px;">• Đã bán 763</span></div>
+                                </div>
+                            </div>
+
+                            <div style="flex: 0 0 auto; width: 31%; min-width: 190px; border: 1px solid #e1e1e1; border-radius: 8px; padding: 12px; background-color: #fff; display: flex; flex-direction: column; justify-content: space-between; scroll-snap-align: start; box-sizing: border-box;">
+                                <div>
+                                    <div style="margin-bottom: 4px;"><span style="font-size: 10px; color:#d0021c; background: #fff; padding: 2px 4px; border-radius: 3px; font-weight: bold;">Mẫu mới</span></div>
+                                    <div style="text-align: center; margin: 15px 0;">
+                                        <img src="vivo-y05-xanh-den-thumb-600x600.jpg" style="width: 100%; max-width: 130px; height: auto;" alt="vivo-y05">
+                                    </div>
+                                    <div style="font-size: 13px; color: #333; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">vivo Y05 4GB/64GB</div>
+                                    <div style="margin-bottom: 8px;">
+                                        <span style="font-size: 11px; color: #666; background: #f1f1f1; padding: 2px 4px; border-radius: 3px; margin-right: 4px;">HD+</span>
+                                        <span style="font-size: 11px; color: #666; background: #f1f1f1; padding: 2px 4px; border-radius: 3px;">6.74"</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div style="font-size: 15px; color: #d0021c; font-weight: bold; margin-bottom: 2px;">4.290.000₫</div>
+                                    <div style="font-size: 12px; color: #999; text-decoration: line-through; margin-bottom: 8px;">4.990.000₫ <span style="color: #d0021c;">-14%</span></div>
+                                    <div style="font-size: 11px; color: #fb6e2e;">★ 5 <span style="color: #666; margin-left: 4px;">• Đã bán 7,9k</span></div>
+                                </div>
+                            </div>
+
+                            <div style="flex: 0 0 auto; width: 31%; min-width: 190px; border: 1px solid #e1e1e1; border-radius: 8px; padding: 12px; background-color: #fff; display: flex; flex-direction: column; justify-content: space-between; scroll-snap-align: start; box-sizing: border-box;">
+                                <div>
+                                    <div style="margin-bottom: 4px;"><span style="font-size: 10px; color:#333; background: #f1f1f1; padding: 2px 4px; border-radius: 3px; font-weight: bold;">Trả chậm 0%</span></div>
+                                    <div style="text-align: center; margin: 15px 0;">
+                                        <img src="honor-x5c-plus-4gb-128gb-xanh-la-thumb-600x600.jpg" style="width: 100%; max-width: 130px; height: auto;" alt="HONOR">
+                                    </div>
+                                    <div style="font-size: 13px; color: #333; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">HONNOR X5c Plus</div>
+                                    <div style="font-size: 13px; color: #333; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">4GB/128GB</div>
+                                    <div style="margin-bottom: 8px;">
+                                        <span style="font-size: 11px; color: #666; background: #f1f1f1; padding: 2px 4px; border-radius: 3px; margin-right: 4px;">HD+</span>
+                                        <span style="font-size: 11px; color: #666; background: #f1f1f1; padding: 2px 4px; border-radius: 3px;">6.74"</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div style="font-size: 15px; color: #d0021c; font-weight: bold; margin-bottom: 2px;">3.990.000₫</div>
+                                    <div style="font-size: 13px; color: #333; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">Quà tặng 50.000₫</div>
+                                    <div style="font-size: 11px; color: #fb6e2e;">★ 4.9 <span style="color: #666; margin-left: 4px;">• Đã bán 3,5k</span></div>
+                                </div>
+                            </div>
+
+                            <div style="flex: 0 0 auto; width: 31%; min-width: 190px; border: 1px solid #e1e1e1; border-radius: 8px; padding: 12px; background-color: #fff; display: flex; flex-direction: column; justify-content: space-between; scroll-snap-align: start; box-sizing: border-box;">
+                                <div>
+                                    <div style="margin-bottom: 4px;"><span style="font-size: 10px; color:#555; background: #f1f1f1; padding: 2px 4px; border-radius: 3px; font-weight: bold;">Trả chậm 0% trả trước 0đ</span></div>
+                                    <div style="text-align: center; margin: 15px 0;">
+                                        <img src="dell-pro-14-essential-pv14250-core-5-120u-pv14250-120u-16512w-bl-thumb-639046727854987975-600x600.jpg" style="width: 100%; max-width: 130px; height: auto;" alt="dell-laptop">
+                                    </div>
+                                    <div style="font-size: 13px; color: #333; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">Dell Pro 14 Essential</div>
+                                    <div style="font-size: 13px; color: #333; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">PV14250 Core 5 120U...</div>
+                                    <div style="margin-bottom: 8px;">
+                                        <span style="font-size: 11px; color: #666; background: #f1f1f1; padding: 2px 4px; border-radius: 3px; margin-right: 4px;">RAM 16 GB</span>
+                                        <span style="font-size: 11px; color: #666; background: #f1f1f1; padding: 2px 4px; border-radius: 3px;">SSD 512 GB</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div style="font-size: 15px; color: #d0021c; font-weight: bold; margin-bottom: 2px;">28.590.000₫</div>
+                                    <div style="font-size: 12px; color: #999; text-decoration: line-through; margin-bottom: 8px;">28.990.000₫</div>
+                                    <div style="font-size: 13px; color: #333; font-weight: bold; line-height: 18px; min-height: 36px; margin-bottom: 8px;">Quà 100.000₫</div>
+                                    <div style="font-size: 11px; color: #fb6e2e;">★ 5 <span style="color: #666; margin-left: 4px;">• Đã bán 536</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button onclick="scrollPhoneSlider('right')" style="position: absolute; right: 5px; top: 50%; transform: translateY(-50%); width: 40px; height: 40px; border-radius: 50%; background-color: #ffffff; border: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0,0,0,0.1); cursor: pointer; z-index: 10; font-size: 18px; color: #333; display: flex; align-items: center; justify-content: center; outline: none;">
+                            &gt;
+                        </button>
+
+                    </div>
+                </div>
+
+            </td>
+        </tr>
+    </table>
+
+    <div style="max-width: 1200px; margin: 0 auto 15px auto; font-family: Arial, sans-serif; font-size: 26px; color: #111111;">
+        <b>Tuần Lễ Ưu Đãi Laptop Gaming</b>
+    </div>
+    
+    <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0" style="max-width: 1200px; margin-bottom: 30px;">
+        <tr>
+            <td align="center">
+                <img src="quangcao3.png" alt="Banner Top" width="100%" style="border-radius: 8px; display: block;">
+            </td>
+        </tr>
+    </table>
+
+    <div style="max-width: 1200px; margin: 0 auto; font-family: Arial, sans-serif; font-size: 26px; color: #111111;">
+        <b>Gian hàng ưu đãi</b>
+    </div>
+
+    <table width="100%" bgcolor="#ffffff" cellpadding="20" cellspacing="0" border="0" style="border-radius: 12px; font-family: Arial, sans-serif; border: 1px solid #e1e1e1; margin-top: 20px; margin-bottom: 30px;">
+        <tr>
+            <td style="padding: 20px;">
+                <div style="max-width: 1200px; margin: 0 auto; width: 100%;">
+                    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; width: 100%; box-sizing: border-box;">
+                        
+                        <div style="border-radius: 8px; overflow: hidden; background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+                            <a href="#" style="display: block; text-decoration: none;">
+                                <img src="sieusalekep.png" style="width: 100%; height: auto; display: block; object-fit: cover;" alt="Siêu Sale Kép">
+                            </a>
+                        </div>
+
+                        <div style="border-radius: 8px; overflow: hidden; background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+                            <a href="#" style="display: block; text-decoration: none;">
+                                <img src="kynguyenmoiw.png" style="width: 100%; height: auto; display: block; object-fit: cover;" alt="Lên Đời Siêu Phẩm">
+                            </a>
+                        </div>
+
+                        <div style="border-radius: 8px; overflow: hidden; background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+                            <a href="#" style="display: block; text-decoration: none;">
+                                <img src="laptopai.png" style="width: 100%; height: auto; display: block; object-fit: cover;" alt="Laptop AI">
+                            </a>
+                        </div>
+
+                        <div style="border-radius: 8px; overflow: hidden; background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+                            <a href="#" style="display: block; text-decoration: none;">
+                                <img src="cake.png" style="width: 100%; height: auto; display: block; object-fit: cover;" alt="Vay Nhanh Cake">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <table width="100%" bgcolor="#ffffff" cellpadding="20" cellspacing="0" border="0" style="border-radius: 12px; font-family: Arial, sans-serif; border: 1px solid #e1e1e1; margin-top: 20px; margin-bottom: 30px;">
+        <tr>
+            <td style="padding: 20px 20px 15px 20px;">
+                <div style="max-width: 1200px; margin: 0 auto; width: 100%;">
+                    <font size="5" color="#111111"><b>Mạng xã hội thegioididong.com</b></font>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding: 0 20px 15px 20px;">
+                <div style="max-width: 1200px; margin: 0 auto; width: 100%;">
+                    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; width: 100%; box-sizing: border-box;">
+                        
+                        <div style="display: flex; flex-direction: column; gap: 10px;">
+                            <div style="border-radius: 8px; overflow: hidden;">
+                                <a href="#">
+                                    <img src="wifi.jpg" style="width: 100%; height: auto; display: block;" alt="ket-noi-wifi">
+                                </a>
+                            </div>
+                            <a href="#" style="text-decoration: none; font-size: 14px; color: #333333; line-height: 20px; font-weight: normal;">
+                                Đã kết nối Wi-Fi nhưng điện thoại vẫn không có mạng, xem ngay 4 cách khắc phục này
+                            </a>
+                        </div>
+
+                        <div style="display: flex; flex-direction: column; gap: 10px;">
+                            <div style="border-radius: 8px; overflow: hidden;">
+                                <a href="#">
+                                    <img src="tatml.jpg" style="width: 100%; height: auto; display: block;" alt="Cách tắt mật khẩu máy tính">
+                                </a>
+                            </div>
+                            <a href="#" style="text-decoration: none; font-size: 14px; color: #333333; line-height: 20px; font-weight: normal;">
+                                Cách tắt mật khẩu máy tính Win 11, Win 10 nhanh và đơn giản nhất
+                            </a>
+                        </div>
+
+                        <div style="display: flex; flex-direction: column; gap: 10px;">
+                            <div style="border-radius: 8px; overflow: hidden;">
+                                <a href="#">
+                                    <img src="asus.jpg" style="width: 100%; height: auto; display: block;" alt="Asus">
+                                </a>
+                            </div>
+                            <a href="#" style="text-decoration: none; font-size: 14px; color: #333333; line-height: 20px; font-weight: normal;">
+                               ASUS của nước nào? Laptop ASUS có tốt không, có nên mua không?
+                            </a>
+                        </div>
+
+                        <div style="display: flex; flex-direction: column; gap: 10px;">
+                            <div style="border-radius: 8px; overflow: hidden;">
+                                <a href="#">
+                                    <img src="redmi k90.png" style="width: 100%; height: auto; display: block;" alt="Redmi-k90">
+                                </a>
+                            </div>
+                            <a href="#" style="text-decoration: none; font-size: 14px; color: #333333; line-height: 20px; font-weight: normal;">
+                                Redmi K90 Ultra đạt chứng nhận 3C, hé lộ sạc 100W cùng cấu hình chuyên gaming
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding: 10px 20px 20px 20px; text-align: center;">
+                <a href="#" style="display: inline-flex; align-items: center; justify-content: center; gap: 6px; text-decoration: none; color: #2f80ed; font-size: 14px; font-family: Arial, sans-serif; font-weight: bold;">
+                    Xem thêm 
+                    <span style="font-size: 11px; font-family: monospace; position: relative; top: -1px;">&gt;</span>
+                </a>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        function scrollPhoneSlider(direction) {
+            var slider = document.getElementById('smartphoneSlider');
+            var scrollAmount = 250; 
+            
+            if (direction === 'left') {
+                slider.scrollLeft -= scrollAmount;
+            } else {
+                slider.scrollLeft += scrollAmount;
+            }
+        }
+    </script>
+    <div class="search-container">
+        <h2 class="search-title">Mọi người cũng tìm kiếm</h2>
+        
+        <div class="table-wrapper">
+            <table class="tags-table">
+                <tr>
+                    <td class="tag-box">laptop</td>
+                    <td class="tag-box">tai nghe</td>
+                    <td class="tag-box">đồng hồ</td>
+                    <td class="tag-box">pc</td>
+                    <td class="tag-box">macbook</td>
+                    <td class="tag-box">dell</td>
+                    <td class="tag-box">asus</td>
+                    <td class="tag-box">điện thoại xiaomi</td>
+                    <td class="tag-box">orient star</td>
+                    <td class="tag-box">loa marshall</td>
+                    <td class="tag-box">loa jbl</td>
+                    <td class="tag-box">đồng hồ movado</td>
+                    <td class="tag-box">laptop gaming</td>
+                </tr>
+                <tr>
+                    <td class="tag-box">chuột gaming</td>
+                    <td class="tag-box">đồng hồ đôi</td>
+                    <td class="tag-box">laptop đồ họa</td>
+                    <td class="tag-box">iphone 15</td>
+                    <td class="tag-box">iphone 16</td>
+                    <td class="tag-box">iphone 17</td>
+                    <td class="tag-box">lenovo legion</td>
+                    <td class="tag-box">lenovo thinkpad</td>
+                    <td class="tag-box">macbook pro m5</td>
+                    <td class="tag-box">ipad pro m5</td>
+                    <td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td class="tag-box">asus tuf gaming</td>
+                    <td class="tag-box">iphone 17 pro</td>
+                    <td class="tag-box">iphone 17 256gb</td>
+                    <td class="tag-box">iphone 17 pro max</td>
+                    <td class="tag-box">macbook neo</td>
+                    <td class="tag-box">jbl charge 5</td>
+                    <td class="tag-box">dell g15 5530</td>
+                    <td class="tag-box">macbook air m5</td>
+                    <td class="tag-box">msi katana 15</td>
+                    <td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td class="tag-box">garmin fenix 8</td>
+                    <td class="tag-box">garmin forerunner 55</td>
+                    <td class="tag-box">máy lọc nước</td>
+                    <td class="tag-box">iPhone 16 Plus</td>
+                    <td class="tag-box">iPhone 16 Pro Max</td>
+                    <td class="tag-box">iPhone 16e</td>
+                    <td class="tag-box">tủ lạnh</td>
+                    <td class="tag-box">samsung galaxy s26</td>
+                    <td class="tag-box">samsung galaxy s26 plus</td>
+                    <td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td class="tag-box">samsung galaxy s26 ultra</td>
+                    <td class="tag-box">iphone 17e</td>
+                    <td class="tag-box">điện thoại tecno</td>
+                    <td class="tag-box">honor magic v5</td>
+                    <td class="tag-box">xiaomi poco f8 pro</td>
+                    <td class="tag-box">điện thoại gập</td>
+                    <td class="tag-box">samsung s25</td>
+                    <td class="tag-box">OPPO Find X9 Ultra</td>
+                    <td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td class="tag-box">OPPO Find X9s</td>
+                    <td class="tag-box">Xiaomi 17T</td>
+                    <td class="tag-box">Xiaomi 17T Pro</td>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <li class="nav-item">
+          <a class="nav-link active" href="index.html">Trở về trang chủ</a>
+        </li>
+    </body>
 </html>
